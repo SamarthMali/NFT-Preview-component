@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+body{
+    background-color:  hsl(217, 54%, 11%);
+}
+.container{
+    background-color: hsl(216, 50%, 16%);
+    height: 557px;
+    width: 20%;
+    border-radius: 9px;
+    position: relative;
+    top: 140px;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    display: inline-block;
+    
+}
+
+
+.overlay {
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    width: 255px;
+    height: 253px;
+    top: 27px;
+    left: 8.5%;
+    background-color: rgba(0, 255, 247, 0.4);
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container:hover .overlay {
+    opacity: 100%;
+}
+ 
+.First-content-text{
+    padding: 0 23px;
+}
+
+.First-content-text h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.img img{
+    width: 83%;
+    padding: 26px;
+    border-radius: 35px;
+
+}
+
+
+
+
+.First-content-text p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+.second-content-text{
+    display: inline-flex;
+    padding: 29px 22px;
+    justify-content: space-between;
+    width: 83%;
+}
+
+.second-left,.second-right{
+    display: inline-flex;
+}
+
+.second-left{
+    color: hsl(178, 100%, 50%);
+}
+.second-left svg,.second-right svg{
+    margin-right: 7px;
+}
+
+.second-right p{
+    color: hsl(215, 51%, 70%);
+}
+
+.line{
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding: 29px 22px;
+    
+}
+
+.last-content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 22px;
+}
+
+
+.last-content img{
+    width: 13%;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.last-content span{
+    color: hsl(215, 51%, 70%);
+}
+
+.last-content a{
+    color: white;
+    text-decoration: none;
+}
+
+hr{
+    color: hsl(215, 32%, 27%);
+    border: none;
+    border-top: 2px solid hsl(215, 32%, 27%);
+    margin-top: -1rem;
+    width: 85%;
+    margin-left: 19px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+
+
+@media only screen and (max-width: 376px) {
+  .container{
+    background-color: hsl(216, 50%, 16%);
+    height: 557px;
+    width: 80%;
+    border-radius: 9px;
+    position: relative;
+    top: 54px;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    display: inline-block;
+  }
+  .container:hover .overlay {
+    opacity: 100%;
+    width: 249px;
+    height: 246px;
+}
+  }
+
